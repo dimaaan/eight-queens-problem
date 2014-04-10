@@ -44,11 +44,11 @@ BOOL CEightQueensDlg::OnInitDialog() {
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
-	picLogo.Load("l.dat");
+	picLogo.Load(_T("l.dat"));
 	picLogo.Draw();
 
 	GdiplusStartup(&GdiPlusToken, &si, NULL);
-	pFerzPic = ::new Bitmap(L"ferz.PNG");
+	pFerzPic = ::new Bitmap(_T("ferz.PNG"));
 	ShowingPos = -1;
 	spinPos.SetBuddy(&editPos);
 
@@ -118,7 +118,7 @@ void CEightQueensDlg::OnEnChangeEditPos() {
 	int tmp;
 
 	editPos.GetWindowText(s);
-	tmp = atoi((LPCTSTR) s);
+	tmp = _ttoi(s);
 	if(tmp >= 92) {
 		ShowingPos = -1;
 		this->RedrawWindow();
