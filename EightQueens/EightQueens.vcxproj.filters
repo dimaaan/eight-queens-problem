@@ -64,7 +64,4 @@
   <ItemGroup>
     <Manifest Include="res\EightQueens.manifest" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
 </Project>

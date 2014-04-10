@@ -13,13 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Russian resources
+// Russian (Russia) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
-#ifdef _WIN32
 LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
 #pragma code_page(1251)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -72,18 +70,14 @@ IDR_MAINFRAME           ICON                    "res\\EightQueens.ico"
 //
 
 IDD_EIGHTQUEENS_DIALOG DIALOGEX 0, 0, 372, 298
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
-    WS_CAPTION
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
 CAPTION "Задача о восьми ферзях"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    CONTROL         "",IDC_SPIN_POS,"msctls_updown32",UDS_SETBUDDYINT | 
-                    UDS_ARROWKEYS | UDS_HORZ,294,30,60,14
-    EDITTEXT        IDC_EDIT_POS,294,12,60,14,ES_AUTOHSCROLL | ES_WANTRETURN | 
-                    ES_NUMBER
-    CONTROL         "Линии",IDC_CHECK_LINES,"Button",BS_AUTOCHECKBOX | 
-                    BS_PUSHLIKE | WS_TABSTOP,294,49,63,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SPIN_POS,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_HORZ,294,30,60,14
+    EDITTEXT        IDC_EDIT_POS,294,12,60,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Линии",IDC_CHECK_LINES,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,294,49,63,10,WS_EX_TRANSPARENT
     CONTROL         "",IDC_LOGO,"Static",SS_BLACKFRAME,65,264,240,34
 END
 
@@ -94,7 +88,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_EIGHTQUEENS_DIALOG, DIALOG
     BEGIN
@@ -145,7 +139,7 @@ BEGIN
     END
 END
 
-#endif    // Russian resources
+#endif    // Russian (Russia) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
